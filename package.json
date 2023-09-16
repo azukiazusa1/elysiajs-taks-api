@@ -2,10 +2,15 @@
   "name": "eliysiajs-task-api",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "dev": "bun run --watch src/index.ts",
+    "create-table": "bun src/db/create-table.ts"
   },
   "dependencies": {
+    "@elysiajs/bearer": "^0.6.0",
+    "@elysiajs/cookie": "^0.6.1",
+    "@elysiajs/jwt": "^0.6.4",
     "elysia": "latest"
   },
   "devDependencies": {

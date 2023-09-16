@@ -1,9 +1,29 @@
-# Elysia with Bun runtime
+# ElysiaJS Task API
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+A simple task API built with [ElysiaJS](https://elysiajs.com/).
+
+## Requirements
+
+- Bun
+
+## Installation
+
+Install Bun:
+
 ```bash
-bun create elysia ./elysia-example
+curl https://bun.sh/install | bash
+```
+
+Install dependencies:
+
+```bash
+bun install
+```
+
+Create Database Table:
+
+```bash
+bun run create-table
 ```
 
 ## Development
@@ -12,4 +32,8 @@ To start the development server run:
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+## Testing
+
+```bash
+bun test
+```
